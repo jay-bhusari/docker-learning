@@ -1,0 +1,14 @@
+Docker Cmds to run new container
+
+To find an image for Redis, you would use: 
+
+1. docker search redis
+
+The Docker CLI has a command called run which will start a container based on a Docker Image. The structure is docker run <options> <image-name>.
+By default, Docker will run a command in the foreground. To run in the background, the option -d needs to be specified.
+
+2. docker run -d redis
+
+The launched container is running in the background, the below command lists all running containers, the image used to start the container and uptime.
+
+3. docker ps
